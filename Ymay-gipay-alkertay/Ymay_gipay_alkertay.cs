@@ -38,38 +38,46 @@ namespace Ymay_gipay_alkertay
                 }
                 else
                 {
-                    int letterA = output.IndexOf('a');
-                    int letterE = output.IndexOf('e');
-                    int letterI = output.IndexOf('i');
-                    int letterO = output.IndexOf('o');
-                    int letterU = output.IndexOf('u');
-                    if ((letterA != 0) && (letterA < letterE) && (letterA < letterI) && (letterA < letterO) && (letterA < letterU))
+                    int[] array = new int[5];
+                    array[0] = output.IndexOf('a');
+                    array[1] = output.IndexOf('e');
+                    array[2] = output.IndexOf('i');
+                    array[3] = output.IndexOf('o');
+                    array[4] = output.IndexOf('u');
+                    // find the vowel that shows up first
+                    int testOne = Array.IndexOf<int>(array, 1);
+                    int testTwo = Array.IndexOf<int>(array, 2);
+                    int testThree = Array.IndexOf<int>(array, 3);
+                    int testFour = Array.IndexOf<int>(array, 4);
+                    int testFive = Array.IndexOf<int>(array, 5);
+
+                    Console.Write(testOne);
+                    Console.Write(testTwo);
+                    Console.Write(testThree);
+                    Console.Write(testFour);
+                    Console.Write(testFive);
+                    Console.WriteLine("");
+
+                    int vowelCheck = output.IndexOfAny("aeiou".ToCharArray()) != -1;
+                    string partOne = output.Substring(vowelCheck);
+                    string partTwo = output.Substring(0,vowelCheck);
+                    string translated = String.Concat(partOne, partTwo);
+                    Console.Write(translated + "ay ");
+
+                    /*
+                    if ((output.IndexOf('a') = -1) && (output.IndexOf('e') = -1) && (output.IndexOf('i') = -1) && (output.IndexOf('o') = -1) && (output.IndexOf('o') = -1) && (output.IndexOf('u') = -1))
                     {
-                        Console.Write(output + "1 ");
-                    }
-                    else if ((letterE != 0) && (letterE < letterA) && (letterE < letterI) && (letterE < letterO) && (letterE < letterU))
-                    {
-                        Console.Write(output + "2 ");
-                    }
-                    else if ((letterI != 0) && (letterI < letterA) && (letterI < letterE) && (letterI < letterO) && (letterI < letterU))
-                    {
-                        Console.Write(output + "3 ");
-                    }
-                    else if ((letterO != 0) && (letterO < letterA) && (letterO < letterE) && (letterO < letterI) && (letterO < letterU))
-                    {
-                        Console.Write(output + "4 ");
-                    }
-                    else if ((letterU != 0) && (letterU < letterA) && (letterU < letterE) && (letterU < letterI) && (letterU < letterO))
-                    {
-                        Console.Write(output + "5 ");
-                    }
-                    else
-                    {
-                        Console.WriteLine("\n\a**Argh! You broke me!**\n(That means something went wrong)");
+                        Console.WriteLine("\n\aNext time type real words Dummy!");
                         Console.ReadKey(true);
                         break;
                     }
-
+                    else
+                    {
+                        Console.WriteLine("\n\a\a**Argh! You broke me!**\n(That means something went wrong)");
+                        Console.ReadKey(true);
+                        break;
+                    }
+                    */
                 }
             }
             Console.ReadKey(true);
