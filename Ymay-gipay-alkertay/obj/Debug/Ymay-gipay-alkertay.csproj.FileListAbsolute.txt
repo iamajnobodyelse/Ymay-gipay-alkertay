@@ -1,0 +1,5 @@
+C:\Users\PyroTech\Documents\Homework\CSC202\Ymay-gipay-alkertay\Ymay-gipay-alkertay\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\PyroTech\Documents\Homework\CSC202\Ymay-gipay-alkertay\Ymay-gipay-alkertay\bin\Debug\Ymay-gipay-alkertay.exe
+C:\Users\PyroTech\Documents\Homework\CSC202\Ymay-gipay-alkertay\Ymay-gipay-alkertay\bin\Debug\Ymay-gipay-alkertay.pdb
+C:\Users\PyroTech\Documents\Homework\CSC202\Ymay-gipay-alkertay\Ymay-gipay-alkertay\obj\Debug\Ymay-gipay-alkertay.exe
+C:\Users\PyroTech\Documents\Homework\CSC202\Ymay-gipay-alkertay\Ymay-gipay-alkertay\obj\Debug\Ymay-gipay-alkertay.pdb
