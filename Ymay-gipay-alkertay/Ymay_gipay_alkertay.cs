@@ -38,16 +38,11 @@ namespace Ymay_gipay_alkertay
                 }
                 else
                 {
-                    int letterA;
-                    int letterE;
-                    int letterI;
-                    int letterO;
-                    int letterU;
-                    output.IndexOf('a') = letterA;
-                    output.IndexOf('e') = letterE;
-                    output.IndexOf('i') = letterI;
-                    output.IndexOf('o') = letterO;
-                    output.IndexOf('u') = letterU;
+                    int letterA = output.IndexOf('a');
+                    int letterE = output.IndexOf('e');
+                    int letterI = output.IndexOf('i');
+                    int letterO = output.IndexOf('o');
+                    int letterU = output.IndexOf('u');
                     if ((letterA != 0) && (letterA < letterE) && (letterA < letterI) && (letterA < letterO) && (letterA < letterU))
                     {
                         Console.Write(output + "1 ");
@@ -70,7 +65,7 @@ namespace Ymay_gipay_alkertay
                     }
                     else
                     {
-                        Console.WriteLine("Argh! You broke me!");
+                        Console.WriteLine("\n\a**Argh! You broke me!**\n(That means something went wrong)");
                         Console.ReadKey(true);
                         break;
                     }
