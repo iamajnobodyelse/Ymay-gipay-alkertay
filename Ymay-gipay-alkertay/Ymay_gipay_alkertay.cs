@@ -39,7 +39,7 @@ namespace Ymay_gipay_alkertay
                 }
                 else
                 {
-                    int vowelCheck = output.IndexOfAny("aeiou".ToCharArray());
+                    int vowelCheck = output.IndexOfAny("aeiouy".ToCharArray());
                     string partOne = output.Substring(vowelCheck);
                     string partTwo = output.Substring(0,vowelCheck);
                     string translated = String.Concat(partOne, partTwo);
